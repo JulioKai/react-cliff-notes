@@ -1,8 +1,8 @@
 --------------------------------------------------------------
-### Refs
+## Refs
 --------------------------------------------------------------
 
-**common case for ref use and general notation:**
+### common case for ref use and general notation:
 
     const emailRef = useRef()
     const passwordlRef = useRef()

@@ -1,8 +1,8 @@
 --------------------------------------------------------------
-### State
+## State
 --------------------------------------------------------------
 
-**Using state case:**
+### Using state case:
 
 Should only be used if you need to re-evaluate and re-render a component after a value changes, if it's only code manipulation it should suffice with normal js, it only "cares" and re-execute components when the state changes
 
@@ -12,7 +12,7 @@ If some data is going to change and that needs to be reflected in the user inter
 
 --------------------------------------------------------------
 
-**for manipulating state that is dependant of a part of a previously defined state:**
+### for manipulating state that is dependant of a part of a previously defined state:
 
     const [state, setState] = useState('default value')
 

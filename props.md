@@ -1,8 +1,8 @@
 --------------------------------------------------------------
-### Props
+## Props
 --------------------------------------------------------------
 
-**passing props from parent to children component:**
+### passing props from parent to children component:
 
     parent:
         <Element propName='value' propName2='value2' />
@@ -18,7 +18,7 @@ recives props as an argument and can be used as propierties of the object that r
 
 --------------------------------------------------------------
 
-**creating a wrapper or passing other jsx elements into a component:**
+### creating a wrapper or passing other jsx elements into a component:
 
     parent where is called: 
         <CompContainer>
@@ -37,7 +37,7 @@ recives props as arguments, uses the reserved propierty of props called children
 
 --------------------------------------------------------------
 
-**passing things like classes or functions to a child component:**
+### passing things like classes or functions to a child component:
 
     parent: 
         <Button className='clase1 clase2' onClick={someCBFunction} text='texto del boton'/>
