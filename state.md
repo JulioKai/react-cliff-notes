@@ -33,7 +33,7 @@ logs 'value' in the console, not 'new value' because the console.log runs before
 
     const [state, setState] = useState('default value')
 
-    setState((state) => return `${state} is the previously assigned state`)  
+    setState((prevState) => return `${prevState} is the previously assigned state`)  
     
 this is a use case of the function way to modify state, the "normal" way is an assigment with setState('some state') but it's not used in this case because the function one ensures that the changed state get the latest snapshot before doing the change
 
