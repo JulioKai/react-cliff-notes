@@ -19,3 +19,51 @@ Remember that if it is an arrow function with only one line/step, not putting th
 
 --------------------------------------------------------------
 
+### Conditional rendering:
+
+if and for not allowed in the dynamic expression, it needs a ternary expression
+
+    return ( 
+        {dataItems.length === 0 ?  <p>no items</p> : data.map(item => <button key={item.data} onClick={item.data}>item.name</button>)}
+    )
+
+it can also be used with the && because after the first evaluation, the next element is returned as a result in js
+
+    return ( 
+            {dataItems.length === 0 && <p>no items</p>}
+            {dataItems.length === 0 && data.map(item => <button key={item.data} onClick={item.data}>item.name</button>)}
+        )
+
+jsx is allowed as values for variables, etc so you can do:
+
+    let itemContent = <p>no items</p>
+
+    if(dataItems.length > 0) {
+        itemContent = data.map(item => <button key={item.data} onClick={item.data}>item.name</button>)
+    }
+
+    return (
+        {itemContent}
+    )
+
+--------------------------------------------------------------
+
+### Conditional returning:
+
+    if (dataA) {
+        return (
+            <div>
+                 <img src="img_girl.jpg"> 
+            </div>
+        )
+    }
+
+    return (
+        <main>
+            <div>
+                <h1> otro titulo </h1>
+            </div>
+        </main>
+    )
+
+can be used something like this to return 2 different jsx depending of conditions, used if the entire jsx content changes
